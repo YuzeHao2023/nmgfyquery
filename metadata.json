@@ -1,0 +1,6 @@
+{
+  "name": "内蒙古医科大学附属医院访问专家库",
+  "description": "内蒙古医科大学附属医院（nmgfy.com）访问专家信息核验与检索系统",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

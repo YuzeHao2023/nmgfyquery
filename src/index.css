@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --hospital-navy: #1c3d7a;
+    --hospital-navy-dark: #152e5e;
+    --hospital-red: #c41e24;
+    --hospital-red-dark: #a6171c;
+    --hospital-gold: #c9a05b;
+  }
+
+  html {
+    font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  .font-serif-sc {
+    font-family: "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif;
+  }
+}
+
+.hospital-banner-texture {
+  background-color: #1c3d7a;
+  background-image:
+    radial-gradient(circle at 18% 25%, rgba(255, 255, 255, 0.06) 0%, transparent 45%),
+    radial-gradient(circle at 82% 75%, rgba(201, 160, 91, 0.08) 0%, transparent 40%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.018) 0px,
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px,
+      transparent 8px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.018) 0px,
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px,
+      transparent 8px
+    );
+}
+
+.hospital-card-surface {
+  background-color: #1f3d7d;
+  background-image:
+    radial-gradient(circle at 90% 10%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.012) 0px,
+      rgba(255, 255, 255, 0.012) 1px,
+      transparent 1px,
+      transparent 6px
+    );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
